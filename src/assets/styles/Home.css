@@ -1,0 +1,14 @@
+.home {
+  scroll-behavior: smooth;
+  background-image: url('../images/background.png');
+  color: white;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}

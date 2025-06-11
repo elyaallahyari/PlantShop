@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: fixed;
+  width: -webkit-fill-available;
+  background: rgb(57 57 57 / 20%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+
+  .header__logo {
+    cursor: pointer;
+    a {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: baseline;
+      color: white;
+      text-decoration: none;
+      img {
+        width: 150px;
+      }
+    }
+  }
+  .header__menu {
+    ul {
+      display: flex;
+      gap: 60px;
+    }
+    a {
+      color: white;
+    }
+  }
+  .header__buttons {
+    display: flex;
+    gap: 33px;
+  }
+}
