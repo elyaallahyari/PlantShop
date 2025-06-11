@@ -1,5 +1,7 @@
-.home {
+html {
   scroll-behavior: smooth;
+}
+.home {
   background-image: url('../images/background.png');
   color: white;
   background-repeat: repeat;
