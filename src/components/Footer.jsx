@@ -1,6 +1,7 @@
 import '../assets/styles/Footer.css'
 import logoIcon from '../assets/images/logo.png'
 import fillIcon from '../assets/images/enterEmail.png'
+
 function Footer() {
   return (
     <>
