@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+* {
+  box-sizing: border-box;
+}
 .home {
   background-image: url('../images/background.png');
   color: white;

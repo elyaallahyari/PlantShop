@@ -1,0 +1,41 @@
+.review {
+  background-image: url('../images/newsBac.svg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 308px;
+  gap: 30px;
+
+  .review__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -80px;
+    gap: 30px;
+    cursor: pointer;
+    img {
+      width: 60px;
+    }
+
+    .review__headTitle {
+      display: flex;
+      flex-direction: column;
+      p {
+        line-height: 0px;
+      }
+      img {
+        &:hover {
+          scale: 190%;
+          transition-duration: 1s;
+        }
+      }
+    }
+  }
+  .review__text {
+    width: 240px;
+    font-weight: 200;
+  }
+}

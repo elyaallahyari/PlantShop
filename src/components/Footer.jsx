@@ -4,7 +4,7 @@ import fillIcon from '../assets/images/enterEmail.png'
 function Footer() {
   return (
     <>
-      <footer className="footer" id='footer'>
+      <footer className="footer" id="footer">
         <div className="footer__column1">
           <a href="#">
             <img src={logoIcon} />

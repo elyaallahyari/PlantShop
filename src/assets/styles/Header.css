@@ -13,7 +13,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.3px);
   -webkit-backdrop-filter: blur(4.3px);
-
+  z-index: 1000 !important;
   .header__logo {
     cursor: pointer;
     a {

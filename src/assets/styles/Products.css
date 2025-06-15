@@ -1,0 +1,45 @@
+.product {
+  width: 380px;
+  height: 330px;
+  background-image: url('../images/plantBac.svg');
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 10px 10px 10px;
+  margin-bottom: 120px;
+
+  .product__img {
+    margin-top: -125px;
+    img {
+      width: 230px;
+    }
+    :hover {
+      scale: 115%;
+      transition-duration: 1s;
+    }
+  }
+  .product__name {
+    margin-left: -75px;
+  }
+  .poduct__info {
+    width: 201px;
+  }
+  .pruducts__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    font-weight: 100;
+    margin-top: 10px;
+    gap: 82px;
+
+    .product__footerBtn {
+      cursor: pointer;
+      img {
+        width: 30px;
+      }
+    }
+  }
+}

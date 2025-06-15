@@ -1,5 +1,4 @@
 .topSelling {
-  padding: 30px;
   margin-top: 200px;
   display: flex;
   flex-direction: column;
@@ -12,8 +11,5 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    img {
-      width: 360px;
-    }
   }
 }

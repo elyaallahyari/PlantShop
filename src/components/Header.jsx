@@ -1,8 +1,8 @@
 import '../assets/styles/Header.css'
 import logoIcon from '../assets/images/logo.png'
-import searchIcon from '../assets/images/search.png'
-import shopIcon from '../assets/images/shop.png'
-import menuIcon from '../assets/images/lines.png'
+import searchIcon from '../assets/images/search.svg'
+import shopIcon from '../assets/images/shop.svg'
+import menuIcon from '../assets/images/lines.svg'
 
 function Header() {
   return (

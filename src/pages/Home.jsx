@@ -1,20 +1,20 @@
 import '../assets/styles/Home.css'
-import Header from "../components/Header"
+import Header from '../components/Header'
 import Hero from '../sections/Hero'
-import TopSelling from '../components/TopSelling'
-import CustomerReview from '../components/CustomerReview'
+import TopSellings from '../sections/TopSellings'
+import CustomerReview from '../sections/CustomerReviews'
 import Footer from '../components/Footer'
-function Home(){
-    return(
-        <>
-        <div className="home">
-        <Header/>
-        <Hero/>
-        <TopSelling/>
-        <CustomerReview/>
-        <Footer/>
-        </div>
-        </>
-    )
+function Home() {
+  return (
+    <>
+      <div className="home">
+        <Header />
+        <Hero />
+        <TopSellings />
+        <CustomerReview />
+        <Footer />
+      </div>
+    </>
+  )
 }
 export default Home
