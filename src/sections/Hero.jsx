@@ -1,5 +1,6 @@
 import '../assets/styles/Hero.css'
 import listenIcon from '../assets/images/LiveDemo.svg'
+
 function Hero() {
   return (
     <>
