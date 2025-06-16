@@ -1,4 +1,4 @@
-import '../assets/styles/products.css'
+import '../assets/styles/Products.css'
 import shopIcon from '../assets/images/shop.svg'
 
 function Product(props) {
