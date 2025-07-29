@@ -4,19 +4,6 @@ import shopIcon from '../assets/images/shop.svg'
 function Product(props) {
   let { img, name, info, cost, item, addToCartHandler, getCountForItem } = props
 
-  // const addToCartHandler = (item) => {
-  //   setCartList((prev) => {
-  //     const existingItem = prev.find((p) => p.id === item.id)
-  //     if (existingItem) {
-  //       // اگه بود، فقط count شو زیاد کن
-  //       return prev.map((p) => (p.id === item.id ? { ...p, count: p.count + 1 } : p))
-  //     } else {
-  //       // اگه نبود، اضافه کن با count: 1
-  //       return [...prev, { ...item, count: 1 }]
-  //     }
-  //   })
-  //   setCartList([...cartList , item])
-  // }
   const size = getCountForItem(item.id)
   return (
     <>

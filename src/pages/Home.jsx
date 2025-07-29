@@ -20,10 +20,7 @@ function Home() {
 
   const addToCartHandler = (item) => {
     let cartListState = [...cartList]
-    // let cartIndex = cartList.indexOf(item)
     let cartIndex = cartListState.findIndex((p) => p.id === item.id)
-    // console.log(cartIndex)
-    // console.log(item)
     if (cartIndex > -1) {
       cartListState[cartIndex].count += 1
       setCartList(cartListState)
@@ -38,31 +35,11 @@ function Home() {
   }
 
   const handleDeleteItem = (index) => {
-    // setCartList(cartList.filter((item) => item.id !== id))
     let indexList = [...cartList]
     indexList.splice(index, 1)
     setCartList(indexList)
   }
-  // const handleIncreaseItem = (id) => {
-  //   setCartList((prev) =>
-  //     prev.map((item) => (item.id === id ? { ...item, count: item.count + 1 } : item))
-  //   )
-  // }
 
-  // const handleDecreaseItem = (id) => {
-  //   setCartList((prev) =>
-  //     prev
-  //       .map((item) => {
-  //         if (item.id === id) {
-  //           const newCount = item.count - 1
-  //           if (newCount <= 0) return null // حذف کن اگه رسید به صفر
-  //           return { ...item, count: newCount }
-  //         }
-  //         return item
-  //       })
-  //       .filter(Boolean)
-  //   )
-  // }
   const handleCounter = (item, num) => {
     let cartListState = [...cartList]
     let cartIndex = cartListState.findIndex((p) => p.id === item.id)

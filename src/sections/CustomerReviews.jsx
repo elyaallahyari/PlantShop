@@ -7,7 +7,6 @@ import icon3 from '../assets/images/reviewIcon3.svg'
 import rate from '../assets/images/rate.svg'
 
 function CustomerReview() {
-
   let reviewList = [
     {
       icon: icon1,

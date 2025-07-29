@@ -5,7 +5,7 @@ function Hero() {
   return (
     <>
       <div className="hero">
-        <h1>Breath Natureal </h1>
+        <h1>Breathe Natural </h1>
         <span>
           Lorem ipsum ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labor.
