@@ -4,7 +4,7 @@ import searchIcon from '../assets/images/search.svg'
 import shopIcon from '../assets/images/shop.svg'
 import menuIcon from '../assets/images/lines.svg'
 
-function Header() {
+function Header({ onCartClick, size }) {
   return (
     <>
       <header className="header">
@@ -31,7 +31,8 @@ function Header() {
         </div>
         <div className="header__buttons">
           <img src={searchIcon} alt="search icon" />
-          <img src={shopIcon} alt="shop icon" />
+          <img src={shopIcon} alt="shop icon" onClick={onCartClick} />
+          <span className="header__badge">{size}</span>
           <img src={menuIcon} alt="menu icon" />
         </div>
       </header>

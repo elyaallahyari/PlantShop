@@ -1,0 +1,66 @@
+.cartSideBar {
+  position: fixed;
+  background-color: rgba(33, 45, 13, 0.421);
+  width: 600px;
+  height: 100vh;
+  top: 86px;
+  right: 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000 !important;
+}
+.cartSideBar__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.101);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.097),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1), inset 0 0 14px 7px rgba(255, 255, 255, 0.089);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.233),
+    transparent,
+    rgba(255, 255, 255, 0.092)
+  );
+}
+.cartSideBar__counter{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.cartSideBar__deleteItem{
+  cursor: pointer;
+}

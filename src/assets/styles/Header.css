@@ -41,4 +41,13 @@
     display: flex;
     gap: 33px;
   }
+  .header__badge {
+    background-color: #00800082;
+    border-radius: 50%;
+    padding: 0px 4px;
+    font-size: 13px;
+    position: absolute;
+    right: 175px;
+    top: 25px;
+  }
 }

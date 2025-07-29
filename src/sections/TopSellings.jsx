@@ -8,44 +8,55 @@ import plantIcon4 from '../assets/images/plant4.svg'
 import plantIcon5 from '../assets/images/plant5.svg'
 import plantIcon6 from '../assets/images/plant6.svg'
 
-function TopSellings() {
-  
+function TopSellings({ addToCartHandler, getCountForItem }) {
   let producrList = [
     {
+      id: 1,
       img: plantIcon1,
       name: 'Calathea plant 1',
       info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      cost: 'Price:  100 $'
+      cost: 100,
+      count: 1
     },
     {
+      id: 2,
       img: plantIcon2,
       name: 'Calathea plant 2',
       info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      cost: 'Price:  300 $ '
+      cost: 300,
+      count: 1
     },
     {
+      id: 3,
       img: plantIcon3,
       name: 'Calathea plant 3',
       info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      cost: 'Price: 600 $'
+      cost: 600,
+      count: 1
     },
     {
+      id: 4,
       img: plantIcon4,
       name: 'Calathea plant 4',
       info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      cost: 'Price: 200 $'
+      cost: 200,
+      count: 1
     },
     {
+      id: 5,
       img: plantIcon5,
       name: 'Calathea plant 5',
       info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      cost: 'Price: 500 $'
+      cost: 500,
+      count: 1
     },
     {
+      id: 6,
       img: plantIcon6,
       name: 'Calathea plant 6',
       info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      cost: 'Price: 100 $'
+      cost: 100,
+      count: 1
     }
   ]
   return (
@@ -55,14 +66,18 @@ function TopSellings() {
           <img src={topSellingIcon} alt="topSellingIcon" id="plants" />
         </div>
         <div className="topSelling__products">
-          {producrList.map((prod, index) => (
+          {producrList.map((prod) => (
             <Product
               className="product"
-              key={index}
+              key={prod.id}
               img={prod.img}
               name={prod.name}
               info={prod.info}
               cost={prod.cost}
+              count={prod.count}
+              item={prod}
+              addToCartHandler={addToCartHandler}
+              getCountForItem={getCountForItem}
             />
           ))}
         </div>
